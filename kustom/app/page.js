@@ -6,12 +6,12 @@ import WppButton from "./features/WppButton/WppButton";
 
 export default function Home() {
   return (
-    <>
+    <div>
     <Header/>
     <Carrousel/>
     <Servicios/>
     <AboutUs/>
     <WppButton/>
-    </>
+    </div>
   );
 }
