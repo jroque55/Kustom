@@ -1,0 +1,35 @@
+.card-container-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem; 
+}
+
+.card-container-info i {
+    font-size: 3rem; 
+    color: white;
+}
+
+.text-container h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.text-container p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .card-container-info {
+        flex-direction: column; 
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .card-container-info i {
+        font-size: 2rem !important; 
+    }
+}
