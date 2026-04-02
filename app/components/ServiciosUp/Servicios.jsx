@@ -16,6 +16,7 @@ const Servicios = () => {
                                 src={servicio.image}
                                 alt={servicio.title}
                                 fill
+                                sizes="100vw"
                                 style={{ objectFit: 'cover' }}
                                 className="servicio-img"
                             />

@@ -25,6 +25,7 @@ export default function Carrousel() {
                             src="/horizontal-1.jpeg"
                             alt="Corte de pelo"
                             fill
+                            sizes="100vw"
                             priority
                             style={{ objectFit: 'cover' }}
                         />
@@ -37,6 +38,7 @@ export default function Carrousel() {
                             src="/horizontal-2.jpeg"
                             alt="Corte de pelo"
                             fill
+                            sizes="100vw"
                             style={{ objectFit: 'cover' }}
                         />
                     </div>
@@ -48,6 +50,7 @@ export default function Carrousel() {
                             src="/horizontal-3.jpeg"
                             alt="Corte de pelo"
                             fill
+                            sizes="100vw"
                             style={{ objectFit: 'cover' }}
                         />
                     </div>
@@ -59,6 +62,7 @@ export default function Carrousel() {
                             src="/horizontal-4.jpeg"
                             alt="Corte de pelo"
                             fill
+                            sizes="100vw"
                             style={{ objectFit: 'cover' }}
                         />
                     </div>
