@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import './Servicios.css';
-import { misServicios } from '@/app/features/Services/serviciosBarber.js';
+import { misServicios } from '../../features/Services/serviciosBarber.js';
 
 const Servicios = () => {
     return (

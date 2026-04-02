@@ -1,6 +1,6 @@
 import "./Carrousel.css"
 import Image from 'next/image';
-import InformacionCard from "@/app/components/InformacionCard/InformacionCard";
+import InformacionCard from "../../components/InformacionCard/InformacionCard";
 
 export default function Carrousel() {
     return (
