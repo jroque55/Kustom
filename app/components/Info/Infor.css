@@ -1,0 +1,21 @@
+.info-section {
+    background-color: var(--foreground);
+    padding: 2rem;
+}
+
+.info-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 400px) {
+    .info-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+    

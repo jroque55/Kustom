@@ -3,12 +3,14 @@ import Carrousel from "./features/Carrousel/Carrousel";
 import Servicios from "./components/ServiciosUp/Servicios"
 import AboutUs from "./components/AboutUs/AboutUs";
 import WppButton from "./features/WppButton/WppButton";
+import Infor from "./components/Info/Infor"
 
 export default function Home() {
   return (
     <div>
     <Header/>
     <Carrousel/>
+    <Infor/>
     <Servicios/>
     <AboutUs/>
     <WppButton/>

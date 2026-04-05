@@ -9,16 +9,18 @@
 
 .card-container-info i {
     font-size: 3rem; 
-    color: var(--foreground);
+    color: var(--color-text);
 }
 
 .text-container h3 {
     font-size: 1.2rem;
+    color: var(--background);
     margin: 0;
 }
 
 .text-container p {
     font-size: 0.9rem;
+    color: var(--background);
     margin: 0;
 }
 
