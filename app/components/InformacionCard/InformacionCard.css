@@ -9,7 +9,7 @@
 
 .card-container-info i {
     font-size: 3rem; 
-    color: white;
+    color: var(--foreground);
 }
 
 .text-container h3 {

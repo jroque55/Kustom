@@ -1,10 +1,68 @@
 .carrousel-img{
     position: relative;
     object-fit: cover;
-    filter: brightness(0.7) contrast(1.1);
     width: 100%;
     height: 30rem;
+    
 }
+
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Un degradado que oscurece arriba (para que no choque con el header) y abajo */
+    background: linear-gradient(
+        to bottom, 
+        rgba(10, 10, 10, 0.8) 0%, 
+        rgba(10, 10, 10, 0.3) 50%, 
+        rgba(10, 10, 10, 0.9) 100%
+    );
+    z-index: 1;
+    pointer-events: none; /* Para que no bloquee los clics en las flechas */
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Por encima del gradiente oscuro */
+    width: 70%; /* Evita que toque los bordes en celular */
+}
+
+.hero-content h1 {
+    color: var(--foreground);
+    /* clamp() es mágico: 2rem en móvil, idealmente 5vw, y un máximo de 4.5rem en PC */
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: var(--foreground);
+    border: none;
+    opacity: 0.4;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* La barra activa se pone roja */
+.carousel-indicators .active {
+    background-color: var(--rojo-kustom);
+    opacity: 1;
+}
+
+.carousel-inner{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
 .carousel-static-info {
     position: absolute;
     bottom: 15%; 
@@ -20,7 +78,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
-    color: white;
+    color: var(--foreground);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 12px;

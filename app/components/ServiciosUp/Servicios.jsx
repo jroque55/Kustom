@@ -4,7 +4,7 @@ import { misServicios } from '../../features/Services/serviciosBarber.js';
 
 const Servicios = () => {
     return (
-        <section id="servicios" className="servicios-section">
+        <section id="#servicios" className="servicios-section">
             <h2 className="servicios-main-title">Nuestros servicios</h2>
 
             <div className="servicios-grid">

@@ -1,7 +1,8 @@
 :root {
-  --background: #0a0a0a;
+  --background: #1a1a1a;
   --foreground: #ededed;
-  --rojo-kustom: #e63946;
+  --rojo-kustom: #e53935;
+  --color-text: rgb(179, 179, 179);
 }
 
 

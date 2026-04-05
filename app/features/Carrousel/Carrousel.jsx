@@ -14,6 +14,9 @@ export default function Carrousel() {
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img className="carrousel-img" src="/horizontal-1.jpeg" alt="Corte de pelo" />
+                    <div className="hero-content">
+                        <h1>KUSTOM BARBER</h1>
+                    </div>
                 </div>
                 <div className="carousel-item">
                     <img className="carrousel-img" src="/horizontal-2.jpeg" alt="Corte de pelo" />
