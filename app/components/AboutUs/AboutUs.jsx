@@ -8,12 +8,7 @@ const AboutUs = () => {
                 <div className="about-grid">
                     <div className="about-image-main">
                         <div className="image-wrapper">
-                            <Image
-                                src="/pato.jpeg"
-                                alt="Pato"
-                                fill
-                                style={{ objectFit: 'cover' }}
-                            />
+                            <img className="about-img" src="/pato.jpeg" alt="Pato" />
                         </div>
                     </div>
                     <div className="about-content-right">

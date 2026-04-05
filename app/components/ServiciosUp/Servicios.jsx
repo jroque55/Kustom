@@ -5,26 +5,20 @@ import { misServicios } from '../../features/Services/serviciosBarber.js';
 const Servicios = () => {
     return (
         <section id="servicios" className="servicios-section">
-            <h2 className="servicios-main-title">NUESTROS SERVICIOS</h2>
+            <h2 className="servicios-main-title">Nuestros servicios</h2>
 
             <div className="servicios-grid">
                 {misServicios.map((servicio, index) => (
                     <div className="servicio-item" key={index}>
-
                         <div className="servicio-image-container">
-                            <Image
+                            <img className="servicio-img"
                                 src={servicio.image}
                                 alt={servicio.title}
-                                fill
-                                sizes="100vw"
-                                style={{ objectFit: 'cover' }}
-                                className="servicio-img"
                             />
                         </div>
-
                         <div className="servicio-text-content">
                             <h3>{servicio.title}</h3>
-                            <p>{servicio.description}</p>
+                            <p className='servicio-description'>{servicio.description}</p>
                         </div>
 
                     </div>

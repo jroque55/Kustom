@@ -1,5 +1,4 @@
 import "./Carrousel.css"
-import Image from 'next/image';
 import InformacionCard from "../../components/InformacionCard/InformacionCard";
 
 export default function Carrousel() {
@@ -12,60 +11,18 @@ export default function Carrousel() {
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
             </div>
 
-            <div className="carousel-static-info">
-                <InformacionCard title="Horarios" description="Martes a Sabados de 12:00 a 20:00" logo="clock" />
-                <InformacionCard title="Ubicación" description="Concepción Arenales 3876, Chacarita, CABA" logo="geo-alt" />
-            </div>
-
             <div className="carousel-inner">
-                {/* Slide 1 */}
                 <div className="carousel-item active">
-                    <div style={{ position: 'relative', height: '35rem', width: '100%' }}>
-                        <Image
-                            src="/horizontal-1.jpeg"
-                            alt="Corte de pelo"
-                            fill
-                            sizes="100vw"
-                            priority
-                            style={{ objectFit: 'cover' }}
-                        />
-                    </div>
+                    <img className="carrousel-img" src="/horizontal-1.jpeg" alt="Corte de pelo" />
                 </div>
-                {/* Slide 2 */}
                 <div className="carousel-item">
-                    <div style={{ position: 'relative', height: '35rem', width: '100%' }}>
-                        <Image
-                            src="/horizontal-2.jpeg"
-                            alt="Corte de pelo"
-                            fill
-                            sizes="100vw"
-                            style={{ objectFit: 'cover' }}
-                        />
-                    </div>
+                    <img className="carrousel-img" src="/horizontal-2.jpeg" alt="Corte de pelo" />
                 </div>
-                {/* Slide 3 */}
                 <div className="carousel-item">
-                    <div style={{ position: 'relative', height: '35rem', width: '100%' }}>
-                        <Image
-                            src="/horizontal-3.jpeg"
-                            alt="Corte de pelo"
-                            fill
-                            sizes="100vw"
-                            style={{ objectFit: 'cover' }}
-                        />
-                    </div>
+                    <img className="carrousel-img" src="/horizontal-3.jpeg" alt="Corte de pelo" />
                 </div>
-                {/* Slide 4 */}
                 <div className="carousel-item">
-                    <div style={{ position: 'relative', height: '35rem', width: '100%' }}>
-                        <Image
-                            src="/horizontal-4.jpeg"
-                            alt="Corte de pelo"
-                            fill
-                            sizes="100vw"
-                            style={{ objectFit: 'cover' }}
-                        />
-                    </div>
+                    <img className="carrousel-img" src="/horizontal-4.jpeg" alt="Corte de pelo" />
                 </div>
             </div>
 
