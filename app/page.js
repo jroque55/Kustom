@@ -4,6 +4,7 @@ import Servicios from "./components/ServiciosUp/Servicios"
 import AboutUs from "./components/AboutUs/AboutUs";
 import WppButton from "./features/WppButton/WppButton";
 import Infor from "./components/Info/Infor"
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <Servicios/>
     <AboutUs/>
     <WppButton/>
+    <Footer/>
     </div>
   );
 }
